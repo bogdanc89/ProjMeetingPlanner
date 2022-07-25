@@ -1,0 +1,14 @@
+{% extends "base.html"%} 
+
+{% block title %} Meeting Rooms {% endblock %}
+{% block content %}
+        <h2>MeetingRooms</h2>       
+        <ul>
+            {% for x in rooms %}
+            <li>
+                {{x}}
+            </li>            
+            {%endfor%}
+        </ul>
+        
+    {% endblock %}
